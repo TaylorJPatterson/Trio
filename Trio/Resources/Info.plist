@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AppGroupID</key>
-	<string>$(APP_GROUP_ID)</string>
 	<key>AppDevVersion</key>
 	<string>$(APP_DEV_VERSION)</string>
+	<key>AppGroupID</key>
+	<string>$(APP_GROUP_ID)</string>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER).background-task.critical-event-log</string>
@@ -87,6 +87,8 @@
 	<string>Health App is used to store blood glucose, carbs and insulin</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>$(COPYRIGHT_NOTICE)</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Motion detection is used to automatically apply override presets when physical activity is detected.</string>
 	<key>NSSupportsLiveActivities</key>
 	<true/>
 	<key>TeamID</key>
@@ -125,14 +127,13 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 </dict>
 </plist>
